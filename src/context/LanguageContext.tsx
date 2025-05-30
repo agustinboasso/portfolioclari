@@ -155,8 +155,8 @@ const content = {
     },
     home: {
       title: 'Clara Cooper',
-      role: 'IT Project Manager',
-      description: 'IT Project Management leader with over 10 years of experience in the banking sector. Specialized in digital transformation and agile methodologies. PMP® and Scrum Master certified, with a proven track record of successfully delivering complex technology projects in multicultural environments.',
+      role: 'IT Project Leader | Scrum Master | PMP | Project Manager',
+      description: 'IT Project Leader with over seven years of experience in project management, digital transformation, and agile leadership. Currently working as Project Manager at OpenDev Pro, where I coordinate multidisciplinary teams and manage high-impact strategic initiatives.',
       viewExperience: 'View Experience',
       contactMe: 'Contact Me',
     },
@@ -164,85 +164,123 @@ const content = {
       title: 'Professional Experience',
       positions: [
         {
-          title: 'IT Project Manager',
-          company: 'Banco Santander',
-          period: '2019 - Present',
+          title: 'Project Manager & Scrum Lead',
+          company: 'OpenDev Pro',
+          period: 'November 2022 - Present (2 years 7 months)',
+          location: 'Argentina',
           description: [
-            'Leading digital transformation projects in retail and corporate banking',
-            'Managing multicultural teams (Spain, Brazil, UK)',
-            'Implementing fintech solutions and optimizing banking processes',
-            'Managing project portfolio with budget exceeding €5M',
+            'Led the development and scaling of FlexiPaaS, an integration platform that achieved over 100 active integrations in its first year.',
+            'Coordinated teams of up to 20 people, applying agile methodologies.',
+            'Ensured compliance with scope, deadlines, and quality standards.',
+            'Implemented tools and processes to optimize project management.'
           ],
         },
         {
-          title: 'Project Manager',
-          company: 'BBVA',
-          period: '2015 - 2019',
+          title: 'Scrum Master',
+          company: 'Kinetic SA',
+          period: 'June 2022 - December 2022 (7 months)',
           description: [
-            'Leading digital banking innovation projects',
-            'Managing international team of 25+ professionals',
-            'Implementing agile methodologies and DevOps',
-            'Reducing time-to-market by 45% in digital projects',
+            'Facilitated the agile transformation of marketing projects.',
+            'Reduced execution timelines from 1 year to just 1 month through automation and collaborative culture.',
+            'Promoted the use of Scrum and Kanban in multidisciplinary teams.',
+            'Achieved greater alignment with strategic objectives and improved productivity.'
           ],
         },
         {
-          title: 'IT Project Coordinator',
-          company: 'Accenture',
-          period: '2012 - 2015',
+          title: 'General Coordinator',
+          company: 'Inwash',
+          period: 'March 2018 - July 2022 (4 years 5 months)',
           description: [
-            'Coordinating core banking implementation projects',
-            'Managing international stakeholders and technical teams',
-            'Optimizing processes and management methodologies',
-            'Participating in 10+ banking transformation projects',
+            'Directed the company ensuring profitability and sustained growth.',
+            'Implemented ISO 9001 certification.',
+            'Installed the first digital washing point and reduced annual operating costs by 20%.',
+            'Drove innovation and digitalization processes that increased operational efficiency.'
           ],
         },
+        {
+          title: 'Program Management Office Director',
+          company: 'Inwash',
+          period: '2016 - May 2018 (2 years)',
+          description: [
+            'Led the project office, standardizing methodologies.',
+            'Managed a portfolio of 5 simultaneous projects.',
+            'Implemented performance metrics (KPIs) and agile methodologies.',
+            'Introduced OKRs as an evaluation model.'
+          ],
+        },
+        {
+          title: 'Administration Manager',
+          company: 'Inwash',
+          period: '2010 - 2016 (6 years)',
+          location: 'Córdoba and surroundings, Argentina',
+          description: [
+            'Supervised financial planning and budget control.',
+            'Designed cost optimization strategies and reports.',
+            'Achieved stabilization of financial indicators.',
+            'Ensured business sustainability for over 7 years.'
+          ],
+        }
       ],
     },
     skills: {
-      title: 'Skills',
+      title: 'Skills & Competencies',
       categories: {
         projectManagement: {
           title: 'Project Management',
           skills: [
-            'Agile Methodologies (Scrum, Kanban)',
             'PMP® Certification',
-            'Risk Management',
-            'Budgeting',
-            'MS Project / Jira',
+            'Scrum Manager',
+            'Product Manager',
+            'Team Management',
+            'Digital Transformation'
           ],
         },
         technical: {
           title: 'Technical',
           skills: [
-            'Software Architecture',
-            'Cloud Computing (AWS, Azure)',
-            'DevOps',
-            'APIs & Microservices',
-            'Cybersecurity',
+            'Artificial Intelligence',
+            'Software Integration',
+            'Kanban',
+            'Jira',
+            'Google Sheets',
+            'ChatGPT'
           ],
         },
-        soft: {
-          title: 'Soft Skills',
+        languages: {
+          title: 'Languages',
           skills: [
-            'Team Leadership',
-            'Effective Communication',
-            'Negotiation',
-            'Conflict Resolution',
-            'Change Management',
+            'English (Professional Working)',
+            'Spanish (Native or Bilingual)'
           ],
         },
       },
+    },
+    education: {
+      title: 'Education',
+      degrees: [
+        {
+          institution: 'Universidad Nacional de Córdoba',
+          degree: 'Civil Engineering',
+          period: '2009 - 2013'
+        },
+        {
+          institution: 'Mundos E',
+          degree: 'Agile Methodologies, Business, Management, Marketing and Related',
+          period: 'June 2022 - November 2022'
+        },
+        {
+          institution: 'Centro de e-Learning UTN FRBA',
+          degree: 'Business Intelligence Diploma',
+          period: 'October 2024 - January 2025'
+        }
+      ]
     },
     contact: {
       title: 'Contact',
-      form: {
-        name: 'Name',
-        email: 'Email',
-        message: 'Message',
-        send: 'Send Message',
-      },
-      connect: 'Connect with me',
-    },
+      email: 'clara.ccooper@gmail.com',
+      linkedin: 'linkedin.com/in/claracooperpmp',
+      location: 'Argentina'
+    }
   },
 };
 

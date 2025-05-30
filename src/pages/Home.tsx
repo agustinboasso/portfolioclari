@@ -9,16 +9,19 @@ const Home = () => {
   const content = translations[language].home;
 
   return (
-    <Box sx={{ overflow: 'hidden' }}>
+    <Box sx={{ 
+      overflow: 'hidden',
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
       {/* Banner Section */}
       <Box
         sx={{
           position: 'relative',
           width: '100%',
           height: '45vh',
-          minHeight: '400px',
           overflow: 'hidden',
-          mb: 6,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -38,12 +41,19 @@ const Home = () => {
         />
       </Box>
 
-      <Container maxWidth="lg">
+      <Container 
+        maxWidth="lg" 
+        sx={{ 
+          flexGrow: 1,
+          display: 'flex',
+          alignItems: 'center',
+          py: 4
+        }}
+      >
         <Grid
           container
           spacing={4}
           sx={{
-            py: { xs: 4, md: 8 },
             alignItems: 'center',
           }}
         >
@@ -57,11 +67,11 @@ const Home = () => {
                 variant="body1"
                 paragraph
                 sx={{
-                  mb: 4,
                   color: '#666',
-                  fontSize: '1.1rem',
+                  fontSize: { xs: '1rem', md: '1.1rem' },
                   lineHeight: 1.8,
-                  maxWidth: '800px'
+                  maxWidth: '800px',
+                  mb: { xs: 3, md: 4 }
                 }}
               >
                 {content.description}
@@ -118,7 +128,7 @@ const Home = () => {
                 sx={{
                   position: 'relative',
                   width: '100%',
-                  maxWidth: '400px',
+                  maxWidth: { xs: '300px', md: '400px' },
                   margin: '0 auto',
                   '&::before': {
                     content: '""',
