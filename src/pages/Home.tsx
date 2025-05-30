@@ -57,7 +57,14 @@ const Home = () => {
             alignItems: 'center',
           }}
         >
-          <Grid item xs={12} md={7}>
+          <Grid
+            xs={12}
+            md={7}
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -118,7 +125,14 @@ const Home = () => {
               </Box>
             </motion.div>
           </Grid>
-          <Grid item xs={12} md={5}>
+          <Grid
+            xs={12}
+            md={5}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

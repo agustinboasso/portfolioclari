@@ -9,13 +9,13 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemText,
   Box,
   useTheme,
   useMediaQuery,
   Container,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import LanguageSelector from './LanguageSelector';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -50,39 +50,36 @@ const Navbar = () => {
   };
 
   const drawer = (
-    <List sx={{ pt: 2 }}>
-      {menuItems.map((item) => (
-        <ListItem
-          button
-          component={RouterLink}
-          to={item.path}
-          key={item.text}
-          onClick={handleDrawerToggle}
-          sx={{
-            py: 2,
-            borderBottom: '1px solid rgba(0, 0, 0, 0.06)',
-            '&:last-child': {
-              borderBottom: 'none',
-            },
-          }}
-        >
-          <ListItemText 
-            primary={item.text} 
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <IconButton
+        sx={{ position: 'absolute', right: 8, top: 8 }}
+        onClick={handleDrawerToggle}
+      >
+        <CloseIcon />
+      </IconButton>
+      <Typography variant="h6" sx={{ my: 2 }}>
+        Clara Cooper
+      </Typography>
+      <List>
+        {menuItems.map((item) => (
+          <ListItem
+            key={item.path}
+            component={RouterLink}
+            to={item.path}
+            onClick={handleDrawerToggle}
             sx={{
-              textAlign: 'center',
-              '& .MuiTypography-root': {
-                fontSize: '1.1rem',
-                fontWeight: location.pathname === item.path ? 600 : 400,
-                color: location.pathname === item.path ? 'primary.main' : 'text.primary',
+              color: 'inherit',
+              textDecoration: 'none',
+              '&:hover': {
+                backgroundColor: 'rgba(0, 0, 0, 0.04)',
               },
             }}
-          />
-        </ListItem>
-      ))}
-      <ListItem sx={{ justifyContent: 'center', mt: 2 }}>
-        <LanguageSelector />
-      </ListItem>
-    </List>
+          >
+            <Typography>{item.text}</Typography>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
   );
 
   return (
@@ -112,7 +109,7 @@ const Navbar = () => {
             >
               Clara Cooper
             </Typography>
-            
+
             {isMobile ? (
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <LanguageSelector />
@@ -192,4 +189,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
